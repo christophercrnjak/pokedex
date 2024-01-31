@@ -10,6 +10,14 @@ async function loadPokemon() {
 }
 
 function renderPokemonInfo() {
-    document.getElementById('pokemonName').innerHTML = currentPokemon['name'];
-    document.getElementById('pokemon_image').src = currentPokemon['sprites']['front_shiny'];
+    let pokeName = currentPokemon['name'];
+    let pokeImg = currentPokemon['sprites']['other']['home']['front_default'];
+    let pokeId = currentPokemon['id'];
+    document.getElementById('pokemonName').innerHTML = capitalizeFirstLetter(pokeName);
+    document.getElementById('id').innerHTML = `# ${pokeId}`;
+    document.getElementById('pokemon_image').src = pokeImg;
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
