@@ -5,7 +5,7 @@
 
 #pokedex {
     min-height: 50vh;
-    background-color: #FB6C6C;
+    background-color: rgb(70,209,178);
     color: white;
     padding: 24px;
 }
@@ -17,10 +17,47 @@
     height: 100px;
     margin-top: -100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
 }
 
 #pokemon_image {
     height: 200px;
-    margin-top: -170px;
+    margin-top: -168px;
+}
+
+#poke_types{
+    display: flex;
+    gap: 8px;
+}
+
+.poke_type {
+    border-radius: 16px;
+    padding: 8px;
+    background-color: rgb(93,224,199);
+    font-weight: bold;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+    width: 100%;
+}
+
+table {
+    margin-left: 48px;
 }
