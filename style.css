@@ -15,12 +15,26 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     height: 100px;
-    margin-top: -100px;
+    margin-top: -88px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #pokemon_image {
     height: 200px;
+    width: 200px;
     margin-top: -170px;
+}
+
+#pokeType {
+    display: flex;
+    gap: 8px;
+}
+
+.navAttributes{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px !important;
 }
